@@ -1,0 +1,805 @@
+html{
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style: none;
+}
+
+body {
+      text-decoration: none;
+      width: 100%;
+      height: 100vh;
+      background: url(Hero.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      display: table;
+}
+
+.content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.content h1 {
+      color: #fff;
+      font-family: "Poppins";
+      font-weight: 200;
+      font-size: 40px;
+}
+
+nav {
+      width: 100%;
+      background: #000;
+      height: 70px;
+      position: static;
+      z-index: 1;
+}
+
+.im{
+  float: left;
+  margin-top: ;
+  margin-left: 40%;
+}
+
+.im img{
+  height: 10%;
+  width: 10%;
+}
+
+nav #brand {
+      float: left;
+      margin-left: 80px;
+      font-size: 30px;
+      line-height: 70px;
+      display: block;
+}
+
+nav #brand a {
+      color: #fff;
+      transition: all 0.3s ease-out;
+      font-family: "Poppins";
+      font-weight: 300;
+}
+
+nav #brand a:hover{
+  color: 	#00008B;
+}
+
+
+
+nav #menu {
+      float: left;
+      left: 15%;
+      position: relative;
+}
+
+nav #menu li {
+      display: inline-block;
+      padding: 0px 30px;
+      cursor: pointer;
+      line-height: 70px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+
+nav #menu li a {
+      color: #fff;
+      font-family: "Poppins";
+      font-weight: 200;
+}
+
+nav #menu li a:hover{
+  color: #1E90FF;
+}
+
+nav li .btn a:hover{
+  color: 	#00008B;
+}
+
+
+#toggle {
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      z-index: 999;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+#toggle .span {
+      height: 3px;
+      background: #fff;
+      transition: all 0.3s ease-out;
+      backface-visibility: hidden;
+      margin: 5px auto;
+}
+
+#toggle.on #one {
+      transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+      opacity: 0;
+}
+
+#toggle.on #three {
+      transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: absolute;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+      display: table;
+}
+
+#resize #menu {
+      height: 90px;
+      display: table-cell;
+      vertical-align: center;
+}
+
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+      margin-top:140px;
+}
+
+#resize #menu li a {
+      color: #fff;
+}
+
+#resize.active {
+      visibility: visible;
+      opacity: 0.99;
+}
+
+
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+      }
+
+      nav #brand {
+            margin-left: 18px;
+      }
+
+      #menu a {
+            font-family: "Poppins";
+            font-weight: 200;
+            font-size: 20px;
+      }
+
+      nav #menu {
+            display: none;
+      }
+}
+
+@media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
+}
+
+.menuIn{
+  color: #000;
+  border: 1px solid #1E90FF;
+  background: #1E90FF;
+  border-radius: 9px;
+  padding: 7px 15px;
+}
+
+ li a .menuIn:hover{
+  color: #00CED1;
+}
+
+.colon1{
+  width: 100%;
+  height: 100vh;
+  background: url(macbook.jpg) no-repeat 50% 7%;
+  background-size: cover;
+}
+
+.colon1 span{
+  color: #fff;
+  float: left;
+  margin-left: 37.5%;
+  font-size: 50px;
+  margin-top: 25%;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+}
+
+.colon1 span:hover{
+  color: #00CED1;
+}
+
+.colon1 .btn p {
+  float: right;
+  margin-right: 40%;
+  margin-top: 2%;
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #1E90FF;
+  border-radius: 15px;
+  padding: 4px 27px;
+  background: #1E90FF;
+}
+
+.lk{
+  font-family: 'Lobster', cursive;
+  float: left;
+  margin-left: 17%;
+  margin-top: -13%;
+  font-size: 15px;
+  color: #000;
+}
+
+.lk span {
+  float: left;
+  margin-left: 4%;
+}
+
+.lk p{
+  font-size: 15px;
+  float: left;
+  margin-left: 23%;
+  margin-top: 1%;
+}
+
+.lk:hover{
+  color: blue;
+}
+
+.lk .btn {
+  float: left;
+  margin-left: 30%;
+  margin-top: 1%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 40px;
+}
+
+.fixed{
+  position: fixed;
+  top: 0;
+}
+
+.colon3{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background: url(apple_imac_ipad_iphone_yellow_31029_1366x768.jpg) no-repeat 50% 50%;
+}
+
+.colon3 p{
+  float: left;
+  margin-left: 15%;
+  margin-top: 1%;
+  font-size: 70px;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 30%;
+  cursor: pointer;
+}
+
+.colon3 p:hover{
+  color: #1E90FF;
+}
+
+.search{
+  float: right;
+  margin-right: 2%;
+  cursor: pointer;
+  font-size: 1.7em;
+  margin-top: 2%;
+  display: inline-block;
+
+}
+
+.search a{
+  color: #fff;
+}
+
+.menuicon img{
+  float: left;
+  margin-left: 7%;
+  margin-top: 2%;
+  width: 2%;
+  height: 2%;
+}
+
+
+.ipad{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+
+.ipad img{
+  float: left;
+  margin-left: 5%;
+  margin-top: 5%;
+  height: 90%;
+  width: 50%;
+}
+
+.ipad p{
+  float: right;
+  margin-right: 20%;
+  margin-top: 20%;
+  font-size: 50px;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+
+}
+
+.ipad span{
+  float: left;
+  margin-left: -150%;
+  margin-top: 5%;
+  font-size: 50px;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+  border: 1px solid #1E90FF;
+  border-radius: 15px;
+  padding: 4px 27px;
+  background: #1E90FF;
+}
+
+.ipad p:hover{
+  color: #1E90FF;
+}
+
+.imac{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background: #F8F8FF;
+}
+
+.imac img{
+  float: right;
+}
+
+.imac p{
+  float: left;
+  margin-left: 5%;
+  margin-top: 20%;
+  font-size: 50px;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+  color: #000;
+}
+
+.imac p:hover{
+  color: #1E90FF;
+}
+
+.imac .btn p:hover{
+  color: #00008B;
+}
+
+.imac .btn{
+  float: left;
+  margin-left: 15%;
+  margin-top: -11%;
+  cursor: pointer;
+}
+
+.btn{
+  float: left;
+  margin-left: 27%;
+  margin-top: -10%;
+}
+
+.btn p{
+  color: #fff;
+  font-size: 40px;
+  border: 1px solid #1E90FF;
+  background: #1E90FF;
+  border-radius: 15px;
+  padding: 4px 27px;
+}
+
+.ip {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  max-width: 100%;
+  max-height: 100%;
+
+
+}
+
+.ip img{
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.ip img:hover{
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.ip a{
+  float: left;
+  margin-left: -20%;
+  margin-top: 40%;
+}
+
+.ip  span{
+
+}
+
+.iph  img{
+  float: left;
+  margin: 4%;
+  height: 66%;
+  width: 25%;
+}
+
+.iph i {
+  float: left;
+  margin-top: 31%;
+  margin-left: -17.5%;
+  color: #fff;
+  font-size: 30px;
+}
+
+.iph span::first-letter{
+  color: blue;
+}
+
+.iph span{
+  float: left;
+  margin-left: -26%;
+  margin-top: 34%;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.iph3 span{
+  float: right;
+  margin-right: -8%;
+  margin-top: 2.5% ;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.iph3 span::first-letter{
+  color: blue;
+}
+
+.iph3  img {
+  float: right;
+  margin-top: 0.5%;
+  margin-right: 5%;
+  height: 40%;
+  width: 28%;
+}
+
+.iph3 i {
+  float: right;
+  margin-top: ;
+  margin-right: 17%;
+  color: #fff;
+  font-size: 30px;
+}
+
+.iph2  img {
+  float: left;
+  margin-top: -0.5%;
+  margin-left: -2%;
+  height: 60%;
+  width: 35%;
+}
+
+.iph2 i {
+  float: left;
+  margin-top: 32%;
+  margin-left: -18.5%;
+  color: #fff;
+  font-size: 30px;
+}
+
+.iph2 span {
+  float: left;
+  margin-left: -24%;
+  margin-top: 35%;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.iph2 span::first-letter{
+  color: blue;
+}
+
+.samsung{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background: url(3kUVDuo.png) no-repeat 50% 50%;
+  cursor: pointer;
+}
+
+.samsung img{
+  float: left;
+  margin-left: 1.5%;
+  margin-top: 5%;
+  height: 80%;
+  width: 55%;
+}
+
+/*SAMSUNG image2 */
+
+.sm2 img{
+  float: right;
+  margin-right: 3%;
+  margin-top: 2%;
+  width: 20%;
+  height: 17%;
+}
+
+.samsung span{
+  float: right;
+  margin-right: 5%;
+  margin-top: -20%;
+  font-size: 50px;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+}
+
+.samsung span:hover{
+  color: #1E90FF;
+}
+
+.samsung  p{
+  float: right;
+  margin-right: -300%;
+  margin-top: -120%;
+  font-size: 50px;
+  color: #fff;
+  font-size: 40px;
+  border: 1px solid #1E90FF;
+  background: #1E90FF;
+  border-radius: 15px;
+  padding: 4px 27px;
+
+}
+
+footer{
+  float: left;
+  background-color: #DCDCDC;
+  width: 98%;
+  padding: 1%;
+  border-top: 1px solid silver;
+}
+
+.socialmenu{
+  margin-right: 10%;
+  margin-top: 2.5%;
+}
+
+.socialmenu a{
+  color: #fff;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #000;
+  margin-left: 1%;
+  width: 30px;
+  height: 30px;
+  float: right;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2em;
+  padding: 3.5px 3.5px;
+}
+
+.socialmenu a:hover{
+  background: #1E90FF;
+}
+
+.folow{
+  float: right;
+  margin-right: -15%;
+  margin-top: -3.5%;
+  cursor: pointer;
+}
+
+.folow p{
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.folow p:hover{
+  color: #1E90FF;
+}
+
+.menufooter{
+  float: left;
+  margin-left: 5%;
+}
+
+
+.menufooter a  {
+  color: #000;
+  display: inline-block;
+  padding: 0 9px;
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.menufooter a:hover{
+  color: #1E90FF;
+}
+
+.mysite{
+float: left;
+margin-top: 4%;
+margin-left: -30%;
+}
+
+.mysite{
+  color: #000;
+  font-size: 14px;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+.mysite p:hover{
+  color: #32CD32;
+}
+
+.image{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background: #DCDCDC;
+}
+
+.image img{
+  float: right;
+  margin-right: 14%;
+  margin-top: 5%;
+  height: 80%;
+  width: 17%;
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.image img:hover{
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.image p{
+  float: left;
+  margin-left: 23%;
+  margin-top: 14%;
+  font-size: 90px;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+}
+
+.image p:hover{
+  color: #1E90FF;
+}
+
+.btn{
+  float: left;
+  margin-left: 27%;
+  margin-top: 2%;
+}
+
+.btn p{
+  color: #fff;
+  font-size: 40px;
+  border: 1px solid #1E90FF;
+  background: #1E90FF;
+  border-radius: 15px;
+  padding: 4px 27px;
+}
+
+
+
+@media (max-width: 360px) {
+  .colon1 span{
+    float: left;
+    margin-left: 15%;
+    font-size: 45px;
+    margin-top: 80%;
+    font-family: 'Dosis', sans-serif;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 360px) {
+  nav #brand {
+        margin-left: 10px;
+        text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  nav #brand {
+        float: left;
+        display: block;
+        margin-left: 20px;
+        font-size: 30px;
+        line-height: 70px;
+        font-weight: bold;
+  }
+  nav #brand {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .colon2 img{
+    margin-top: 10%;
+    float: right;
+    margin-right: 14%;
+    width: 50%;
+    height: 70%;
+  }
+  .colon2{
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background: url(cf385d2f3bbb35a2e4cb0632286a0210.jpg) no-repeat 101% 101%;
+  }
+
+}
